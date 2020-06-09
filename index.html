@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-gray-200 p-4">
+    <h2 class="mb-4 text-4xl">Task 1</h2>
+    <p>
+      1. Сделайте функцию, которая считает и выводит количество своих вызовов.
+    </p>
+    <p class="task1_result mb-16 mt-4"></p>
+    <h2 class="mb-4 text-4xl">Task 2</h2>
+    <p class="mb-4">
+      2. Даны кнопки. Привяжите к каждой кнопке событие по клику, которое будет
+      считать количество нажатий по кнопке и выводить его в текст кнопки.
+      Количество нажатий для каждой кнопки должно хранится в замыкании.
+    </p>
+    <div class="flex mb-16">
+      <div style="margin-right: 15px;">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          data-target="button1"
+        >
+          Clicks: 0
+        </button>
+      </div>
+      <div>
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          data-target="button2"
+        >
+          Clicks: 0
+        </button>
+      </div>
+    </div>
+    <h2 class="mb-4 text-4xl">Task 3</h2>
+    <p class="mb-4">
+      3. Сделайте функцию, каждый вызов который будет генерировать случайные
+      числа от 1 до 100, но так, чтобы они не повторялись, пока не будут
+      перебраны все числа из этого промежутка. Решите задачу через замыкания - в
+      замыкании должен хранится массив чисел, которые уже были сгенерированы
+      функцией.
+    </p>
+    <button
+      class="bg-red-800 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mb-4"
+      data-target="button_random"
+    >
+      GO!
+    </button>
+    <p class="result .max-w-screen-md">Result:</p>
+    <script src="closures.js"></script>
+  </body>
+</html>
